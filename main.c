@@ -1,9 +1,12 @@
 #include <stdio.h>
 
-/* copy input to output; 1st verion */
-main(){
-  int c;
+/* count characters in input; 1st version */
 
-  while((c = getchar()) != EOF)
-    putchar(c);
+main(){
+  long nc;
+
+  nc = 0;
+  while (getchar() != EOF)
+    ++nc;
+  printf("%ld\n", nc);
 }
